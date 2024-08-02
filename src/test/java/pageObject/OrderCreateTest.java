@@ -1,4 +1,4 @@
-package pageObject;
+package ru.yandex.praktikum.pageObject;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.After;
@@ -95,7 +95,7 @@ public class OrderCreateTest {
                 .clickButtonCreateOrder();
 
         PopUpWindow popUpWindow = new PopUpWindow(driver);
-                popUpWindow.clickButtonYes();
+        popUpWindow.clickButtonYes();
 
         assertTrue(popUpWindow.getHeaderAfterCreateOrder().contains(expectedHeader));
     }
